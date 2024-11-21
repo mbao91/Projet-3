@@ -17,7 +17,7 @@
     body {
         display: flex;
         justify-content: center;
-        margin-top: 10px;
+        margin: 10px 30px 0;
     }
     
     .main-container {
@@ -41,7 +41,7 @@
         background-color: white;
         border-radius: 20px;
         padding: 5px;
-        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.2));
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     }
     
     .card img {
@@ -392,14 +392,14 @@
     
     #activites img {
         width: 100%;
-        height: 84%;
+        height: 87%;
         object-fit: cover;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }
     
     #activites h3 {
-        font-size: 1vw;
+        font-size: 13px;
         display: flex;
         align-items: center;
         padding-bottom: -3px;
@@ -411,16 +411,23 @@
     
     /****** Pied de page ***********/
     .end {
+        padding-top: 20px;
         margin-top: 20px;
         width: 100%;
         display: grid;
         grid-template-columns: auto auto auto;
+        background-color: var(--main-bg-color);
         
     }
     
     .end > div {
         display: grid;
         row-gap: 10px;
+        padding-bottom: 20px;
+    }
+
+    .end1 {
+        padding-left: 10px;
     }
     }
     /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -473,7 +480,7 @@
         .ac2, .ac3, .ac4, .ac5 {
             width: 20%;
             height: 17em;
-            margin-right: 25px;
+            margin-right: 22px;
         }
     
         #activites img {
@@ -488,10 +495,11 @@
     /* Small devices (phones, less than 768px) */
     @media (max-width: 767.98px) and (min-width: 320px) {
     body {
-        margin-top: 0;
+        margin: 0;
     }
     .main-container {
-        padding-top: 30px; 
+        padding-top: 30px;
+        
     }
     
     /****** En-tête ***********/
@@ -698,7 +706,6 @@
     /****** Pied de page ***********/
     .end {
         grid-template-columns: auto;
-        background-color: var(--main-bg-color);
         padding-top: 20px;
     }
     
@@ -709,6 +716,10 @@
         margin-left: 30px;
         width: fit-content;
         font-size: smaller;
+    }
+
+    .end1 {
+        padding-left: 0;
     }
     } 
     
